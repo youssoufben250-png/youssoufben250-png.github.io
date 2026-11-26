@@ -1,3 +1,20 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://getequaly.com/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getequaly.com/">
+<meta property="og:site_name" content="Equaly">
+<meta property="og:image" content="https://getequaly.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/gabarito-700.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Equaly","operatingSystem":"iOS","applicationCategory":"HealthApplication","description":"A weight loss coaching app: a plan built from a two-minute voice note, with daily walks, simple portions and a coach for hard evenings. No calorie counting.","url":"https://getequaly.com/","offers":[{"@type":"Offer","price":"0","priceCurrency":"GBP","name":"Free"},{"@type":"Offer","price":"14.99","priceCurrency":"GBP","name":"Pro, monthly"}],"publisher":{"@type":"Organization","name":"Equaly","email":"hello@getequaly.com","url":"https://getequaly.com/"}}</script>
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNy41MCAtNS4yMCkgc2NhbGUoMS4xNSkiPjxwYXRoIGQ9Ik00OSAzNVE0OCAzMCA0NiAyNiIgc3Ryb2tlPSIjOGE1YTNjIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik01MCAzMFE2NS4wIDI1LjYgNjYgMTBRNTEuMCAxNC40IDUwIDMweiIgZmlsbD0iIzVjYzA2YiIvPjxyZWN0IHg9IjI0IiB5PSIzNCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjEzIiByeD0iNi41IiBmaWxsPSIjM2ZhZThjIi8+PHJlY3QgeD0iMjQiIHk9IjUzIiB3aWR0aD0iMzAiIGhlaWdodD0iMTMiIHJ4PSI2LjUiIGZpbGw9IiNmMjlhNTIiLz48cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MyA2MCkgc2NhbGUoMC42MikiIGQ9Ik0wIDZDLTYgMCAtMTIgLTIgLTEyIC03Qy0xMiAtMTEgLTkgLTEzIC02IC0xM0MtMyAtMTMgLTEgLTExIDAgLTlDMSAtMTEgMyAtMTMgNiAtMTNDOSAtMTMgMTIgLTExIDEyIC03QzEyIC0yIDYgMCAwIDZ6IiBmaWxsPSIjZWY2ZjZjIi8+PHJlY3QgeD0iMjQiIHk9IjcyIiB3aWR0aD0iNTIiIGhlaWdodD0iMTMiIHJ4PSI2LjUiIGZpbGw9IiM1YWE5ZTYiLz48L2c+PC9zdmc+">
 <title>Equaly: weight loss that fits your real life</title>
 <meta name="description" content="Tell Equaly about your days in a two-minute voice note and get a plan built around them: short walks, simpler plates and a coach for the hard evenings. No calorie counting. Free on iPhone.">
@@ -9,27 +26,34 @@
   :root{
     --bg:#ffffff; --grey:#f2f2f7; --card:#ffffff; --ink:#1c1c1e; --muted:#6c6c72; --line:#e3e3e8;
     --green:#1d8263; --green-dark:#11624a; --soft:#e4f2ec;
-    --orange:#f29a52; --blue:#5aa9e6; --mint:#3fae8c; --heart:#ef6f6c;
+    --orange:#f29a52; --blue:#5aa9e6; --mint:#3fae8c; --heart:#ef6f6c; --leaf:#5cc06b; --stem:#8a5a3c;
+    --on-green:#ffffff; --green-hover:#11624a; --danger:#d1392b;
+    --shadow:rgba(28,28,30,.18); --select:rgba(29,130,99,.22);
     --font:-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter Display",Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --display:"Gabarito",-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     color-scheme:light;
   }
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
     --bg:#000000; --grey:#1c1c1e; --card:#2c2c2e; --ink:#f2f2f7; --muted:#9a9aa1; --line:#38383a;
-    --green:#3cc296; --green-dark:#86dfbf; --soft:#12302a; color-scheme:dark }}
+    --green:#3cc296; --green-dark:#86dfbf; --soft:#12302a; --on-green:#04150f; --green-hover:#5fd4ab; --danger:#ff6b5e; --shadow:rgba(0,0,0,.6); --select:rgba(60,194,150,.3); color-scheme:dark }}
   :root[data-theme="dark"]{
     --bg:#000000; --grey:#1c1c1e; --card:#2c2c2e; --ink:#f2f2f7; --muted:#9a9aa1; --line:#38383a;
-    --green:#3cc296; --green-dark:#86dfbf; --soft:#12302a; color-scheme:dark }
+    --green:#3cc296; --green-dark:#86dfbf; --soft:#12302a; --on-green:#04150f; --green-hover:#5fd4ab; --danger:#ff6b5e; --shadow:rgba(0,0,0,.6); --select:rgba(60,194,150,.3); color-scheme:dark }
 
+  @font-face{font-family:"Gabarito";src:url("fonts/gabarito-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
   *{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  ::selection{background:var(--select)}
+  input{caret-color:var(--green)}
+  a{text-underline-offset:.18em}
   body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 var(--font);letter-spacing:-.011em;-webkit-font-smoothing:antialiased}
   a{color:var(--green)}
   img{display:block}
   .wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
-  h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
-  h1{font-size:clamp(2.6rem,6.2vw,4.6rem);line-height:1.02;letter-spacing:-.035em;font-weight:700}
-  h2{font-size:clamp(2rem,4vw,3rem);line-height:1.06;letter-spacing:-.03em;font-weight:700}
-  h3{font-size:1.3rem;line-height:1.25;letter-spacing:-.02em;font-weight:600}
+  h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;overflow-wrap:break-word;min-width:0}
+  h1{font-size:clamp(2.8rem,6.6vw,5rem);line-height:1;letter-spacing:-.03em;font-weight:700}
+  h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.05;letter-spacing:-.025em;font-weight:700}
+  h3{font-size:1.3rem;line-height:1.25;letter-spacing:-.01em;font-weight:700}
   p{margin:0}
   .lead{font-size:clamp(1.1rem,1.6vw,1.3rem);line-height:1.5;color:var(--muted);max-width:34em;letter-spacing:-.015em}
   .muted{color:var(--muted)}
@@ -41,15 +65,12 @@
   header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 78%,transparent);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}
   body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--bg)}
   header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-  .logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);font:700 1.3rem/1 var(--display);letter-spacing:-.03em}
+  .logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);font:700 1.35rem/1 var(--display);letter-spacing:-.02em}
   .logo svg{width:20px;height:28px}
 
   /* Buttons and form */
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 22px;border-radius:14px;border:0;background:var(--green);color:#fff;font:600 1.0625rem/1 var(--font);letter-spacing:-.02em;text-decoration:none;cursor:pointer;transition:transform .1s ease-out,background-color .15s}
-  .btn:hover{background:var(--green-dark)}
-  :root:not([data-theme="light"]) .btn{color:#fff}
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .btn{color:#04150f} :root:not([data-theme="light"]) .btn:hover{background:#5fd4ab} }
-  :root[data-theme="dark"] .btn{color:#04150f}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 22px;border-radius:14px;border:0;background:var(--green);font:600 1.0625rem/1 var(--font);letter-spacing:-.02em;text-decoration:none;cursor:pointer;transition:transform .1s ease-out,background-color .15s;color:var(--on-green)}
+  .btn:hover{background:var(--green-hover)}
   .btn:active{transform:scale(.97)}
   .btn:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid color-mix(in srgb,var(--green) 45%,transparent);outline-offset:2px}
   .btn.sm{min-height:38px;padding:0 16px;border-radius:11px;font-size:.9375rem}
@@ -62,18 +83,14 @@
   .consent{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:.8125rem;line-height:1.45;color:var(--muted)}
   .consent input{margin:2px 0 0;width:16px;height:16px;accent-color:var(--green);flex:none}
   .msg{margin-top:12px;font-size:.9375rem;font-weight:600}
-  .msg.ok{color:var(--green)} .msg.err{color:#d1392b}
+  .msg.ok{color:var(--green)} .msg.err{color:var(--danger)}
   .store-cta{display:none}
   html.live [data-form]{display:none}
   html.live .store-cta{display:inline-flex}
   .note{margin-top:14px;font-size:.875rem;color:var(--muted)}
 
-  /* Phone frame around real app screens */
-  .phone{position:relative;width:var(--w,300px);max-width:100%;border-radius:calc(var(--w,300px) * .16);padding:calc(var(--w,300px) * .033);background:#1c1c1e;box-shadow:0 1px 0 #3a3a3c inset,0 30px 60px -20px rgba(0,0,0,.35),0 12px 24px -12px rgba(0,0,0,.2)}
-  .phone .screen{position:relative;border-radius:calc(var(--w,300px) * .13);overflow:hidden;background:#f2f2f7;aspect-ratio:390/870}
-  .phone .bar{height:calc(var(--w,300px) * .087);display:flex;align-items:center;justify-content:space-between;padding:0 9% 0 11%;font:600 calc(var(--w,300px) * .046)/1 var(--font);color:#1c1c1e;letter-spacing:0}
-  .phone .bar::after{content:"";width:28%;height:calc(var(--w,300px) * .058);border-radius:99px;background:#000;position:absolute;left:36%;top:calc(var(--w,300px) * .02)}
-  .phone .bar i{display:block;width:16%;height:calc(var(--w,300px) * .03);border-radius:3px;background:linear-gradient(90deg,#1c1c1e 78%,transparent 78%);border:1px solid #1c1c1e;opacity:.85}
+  /* Real app screens, shown as they are: no drawn device around them */
+  .phone{width:var(--w,300px);max-width:100%;border-radius:calc(var(--w,300px) * .12);overflow:hidden;background:var(--grey);box-shadow:0 0 0 1px var(--line),0 28px 56px -24px var(--shadow),0 10px 20px -12px var(--shadow)}
   .phone img{width:100%;height:auto}
 
   /* Hero */
@@ -87,9 +104,6 @@
   .bars span:nth-child(2){background:var(--orange);width:62%}
   .bars span:nth-child(3){background:var(--blue);width:100%}
   .hero .phone{--w:300px;z-index:1}
-  .proof{display:flex;align-items:center;gap:14px;padding-top:8px}
-  .proof .n{font:700 2.25rem/1 var(--display);letter-spacing:-.04em;color:var(--green)}
-  .proof p{font-size:.9375rem;line-height:1.4;color:var(--muted);max-width:22em}
 
   /* How it works */
   .head{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(40px,6vw,64px);max-width:40em}
@@ -103,10 +117,9 @@
   .coach .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,7vw,96px);align-items:center}
   .coach .phone{--w:300px;justify-self:center}
   .coach .copy{display:flex;flex-direction:column;gap:22px}
-  .facts{display:grid;gap:18px;margin-top:8px}
-  .fact{display:grid;grid-template-columns:36px 1fr;gap:14px;align-items:start}
-  .fact svg{width:36px;height:36px}
-  .fact h3{font-size:1.0625rem;margin-bottom:2px}
+  .facts{display:grid;margin-top:4px;border-top:1px solid var(--line)}
+  .fact{padding:16px 0;border-bottom:1px solid var(--line)}
+  .fact h3{font-family:var(--font);font-size:1.0625rem;font-weight:600;letter-spacing:-.02em;margin-bottom:2px}
   .fact p{color:var(--muted);font-size:1rem}
 
   /* Results */
@@ -123,7 +136,7 @@
   .founder .copy{display:flex;flex-direction:column;gap:18px;max-width:38em}
   .founder .copy p{font-size:1.1875rem;line-height:1.55}
   .sig{font-size:.9375rem!important;color:var(--muted)}
-  .video{width:min(320px,100%);aspect-ratio:9/16;border-radius:24px;overflow:hidden;background:#000}
+  .video{width:min(320px,100%);aspect-ratio:9/16;border-radius:24px;overflow:hidden;background:var(--ink)}
   .video video{width:100%;height:100%;object-fit:cover}
   .founder .wrap:has(.video[hidden]){grid-template-columns:1fr}
 
@@ -155,6 +168,7 @@
   footer .wrap{display:grid;gap:14px}
   footer nav{display:flex;flex-wrap:wrap;gap:18px}
   footer a{color:var(--muted)}
+  footer .ink{color:var(--ink)}
 
   /* Mobile download bar */
   .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-top:1px solid var(--line);transition:transform .25s ease-out}
@@ -177,11 +191,12 @@
   }
   @media (prefers-reduced-motion: reduce){ *{transition:none!important} }
 </style>
-
+</head>
+<body>
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#" aria-label="Equaly home">
-      <svg viewBox="22 8 56 79" aria-hidden="true"><path d="M49 35Q48 30 46 26" stroke="#8a5a3c" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M50 30Q65 25.6 66 10Q51 14.4 50 30z" fill="#5cc06b"/><rect x="24" y="34" width="52" height="13" rx="6.5" fill="#3fae8c"/><rect x="24" y="53" width="30" height="13" rx="6.5" fill="#f29a52"/><path transform="translate(63 60) scale(0.62)" d="M0 6C-6 0 -12 -2 -12 -7C-12 -11 -9 -13 -6 -13C-3 -13 -1 -11 0 -9C1 -11 3 -13 6 -13C9 -13 12 -11 12 -7C12 -2 6 0 0 6z" fill="#ef6f6c"/><rect x="24" y="72" width="52" height="13" rx="6.5" fill="#5aa9e6"/></svg>
+      <svg viewBox="22 8 56 79" aria-hidden="true"><path d="M49 35Q48 30 46 26" stroke="var(--stem)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M50 30Q65 25.6 66 10Q51 14.4 50 30z" fill="var(--leaf)"/><rect x="24" y="34" width="52" height="13" rx="6.5" fill="var(--mint)"/><rect x="24" y="53" width="30" height="13" rx="6.5" fill="var(--orange)"/><path transform="translate(63 60) scale(0.62)" d="M0 6C-6 0 -12 -2 -12 -7C-12 -11 -9 -13 -6 -13C-3 -13 -1 -11 0 -9C1 -11 3 -13 6 -13C9 -13 12 -11 12 -7C12 -2 6 0 0 6z" fill="var(--heart)"/><rect x="24" y="72" width="52" height="13" rx="6.5" fill="var(--blue)"/></svg>
       Equaly
     </a>
     <a class="btn sm" data-cta href="#join">Get early access</a>
@@ -192,8 +207,8 @@
   <section class="hero">
     <div class="wrap">
       <div class="copy">
-        <h1>Lose weight with a plan that fits your real life.</h1>
-        <p class="lead">Tell Equaly about your days in a two-minute voice note. You get a plan built around them, with short walks, simpler plates and a coach to talk to on the hard evenings. You never count a calorie.</p>
+        <h1>Weight loss that fits your real life.</h1>
+        <p class="lead">A plan built from a two-minute voice note, with no calorie counting.</p>
         <div>
           <form class="signup" data-form id="join" novalidate>
             <div class="field">
@@ -204,16 +219,12 @@
             <p class="msg" role="status" hidden></p>
           </form>
           <a class="btn store store-cta" data-store href="#">Download on the App Store</a>
-          <p class="note">Free on iPhone. Your first 7 days of Pro are included, no card needed.</p>
-        </div>
-        <div class="proof">
-          <span class="n">100+</span>
-          <p>people coached one-on-one by Ben, the weight loss coach behind Equaly.</p>
+          <p class="note">Free on iPhone. 7 days of Pro included, no card needed.</p>
         </div>
       </div>
       <div class="art">
         <div class="bars" aria-hidden="true"><span></span><span></span><span></span></div>
-        <div class="phone"><div class="screen"><div class="bar">9:41<i></i></div><img src="img/voice.webp" width="660" height="1428" alt="The Equaly app asking you to tell your story by voice, with a large microphone button."></div></div>
+        <div class="phone"><img src="img/voice.webp" width="660" height="1428" alt="The Equaly app asking you to tell your story by voice, with a large microphone button."></div>
       </div>
     </div>
   </section>
@@ -226,19 +237,19 @@
       </div>
       <ol class="steps">
         <li>
-          <div class="phone"><div class="screen"><div class="bar">9:41<i></i></div><img src="img/story.webp" width="660" height="1428" alt="Sarah's story typed into the app: her weight, her goal, what she has tried and why evenings are hard."></div></div>
+          <div class="phone"><img src="img/story.webp" width="660" height="1428" alt="Sarah's story typed into the app: her weight, her goal, what she has tried and why evenings are hard."></div>
           <span class="num">1</span>
           <h3>Talk for two minutes</h3>
           <p>Say where you are, what you want and what got in the way before. You can type it if you prefer.</p>
         </li>
         <li>
-          <div class="phone"><div class="screen"><div class="bar">9:41<i></i></div><img src="img/plan.webp" width="660" height="1428" alt="Sarah's plan: a 15-minute walk every day, three short sessions a week and one food change at a time."></div></div>
+          <div class="phone"><img src="img/plan.webp" width="660" height="1428" alt="Sarah's plan: a 15-minute walk every day, three short sessions a week and one food change at a time."></div>
           <span class="num">2</span>
           <h3>Get your plan</h3>
           <p>Your walks, sessions and food changes are set from what you said: the time you have, your knees, your evenings.</p>
         </li>
         <li>
-          <div class="phone"><div class="screen"><div class="bar">9:41<i></i></div><img src="img/today.webp" width="660" height="1428" alt="The Today screen with a 30-second check-in and today's 15-minute walk."></div></div>
+          <div class="phone"><img src="img/today.webp" width="660" height="1428" alt="The Today screen with a 30-second check-in and today's 15-minute walk."></div>
           <span class="num">3</span>
           <h3>Do one thing a day</h3>
           <p>A 30-second check-in, then one small action. Miss a day and the plan picks up again the next morning.</p>
@@ -249,21 +260,18 @@
 
   <section class="coach">
     <div class="wrap">
-      <div class="phone"><div class="screen"><div class="bar">9:41<i></i></div><img src="img/coach.webp" width="660" height="1428" alt="A chat where Sarah tells her coach she ate biscuits after the kids went to bed, and the coach suggests what to do tonight and tomorrow."></div></div>
+      <div class="phone"><img src="img/coach.webp" width="660" height="1428" alt="A chat where Sarah tells her coach she ate biscuits after the kids went to bed, and the coach suggests what to do tonight and tomorrow."></div>
       <div class="copy">
         <h2>Someone to talk to at 9pm</h2>
-        <p class="lead">Evenings are when most plans fall apart. Send your coach a message or a voice note when it gets hard. The answer knows your plan, your week and what you said on day one.</p>
+        <p class="lead">Evenings are when most plans fall apart. Message your coach when it gets hard: it knows your plan and your week.</p>
         <div class="facts">
           <div class="fact">
-            <svg viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" fill="var(--soft)"/><circle cx="18" cy="18" r="9" fill="none" stroke="var(--green)" stroke-width="2"/><circle cx="18" cy="18" r="4.5" fill="none" stroke="var(--green)" stroke-width="2"/></svg>
             <div><h3>Check my plate</h3><p>Describe your meal and get portion advice in plain words, without numbers.</p></div>
           </div>
           <div class="fact">
-            <svg viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" fill="var(--soft)"/><path d="M18 26c-5-3.4-8-6.2-8-9.6 0-2.3 1.8-4 4-4 1.7 0 3.1.9 4 2.3.9-1.4 2.3-2.3 4-2.3 2.2 0 4 1.7 4 4 0 3.4-3 6.2-8 9.6z" fill="none" stroke="var(--green)" stroke-width="2" stroke-linejoin="round"/></svg>
             <div><h3>Tools for cravings and guilt</h3><p>Short exercises of 3 to 5 minutes for the moments that usually end a diet.</p></div>
           </div>
           <div class="fact">
-            <svg viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" fill="var(--soft)"/><path d="M11 24l5-6 4 3 5-8" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <div><h3>A plan that moves with you</h3><p>When the walks get easy, the plan steps up. On a bad week, it gets lighter.</p></div>
           </div>
         </div>
@@ -382,7 +390,7 @@
 
 <footer>
   <div class="wrap">
-    <p><b style="color:var(--ink)">Equaly does not replace medical advice.</b> Talk to your doctor before changing your diet or starting an exercise programme, especially if you have a health condition. If you think you may be struggling with an eating disorder, please reach out to a healthcare professional.</p>
+    <p><b class="ink">Equaly does not replace medical advice.</b> Talk to your doctor before changing your diet or starting an exercise programme, especially if you have a health condition. If you think you may be struggling with an eating disorder, please reach out to a healthcare professional.</p>
     <p>Questions? <a href="mailto:hello@getequaly.com">hello@getequaly.com</a>. Your data is handled in line with GDPR and never sold.</p>
     <nav><a href="privacy/">Privacy policy</a><a href="terms/">Terms of use</a><a href="legal/">Legal notice</a><span>© <span id="y">2026</span> Equaly</span></nav>
   </div>
@@ -465,3 +473,5 @@
     });
   });
 </script>
+</body>
+</html>
