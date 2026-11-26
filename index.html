@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNy41MCAtNS4yMCkgc2NhbGUoMS4xNSkiPjxwYXRoIGQ9Ik00OSAzNVE0OCAzMCA0NiAyNiIgc3Ryb2tlPSIjOGE1YTNjIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik01MCAzMFE2NS4wIDI1LjYgNjYgMTBRNTEuMCAxNC40IDUwIDMweiIgZmlsbD0iIzVjYzA2YiIvPjxyZWN0IHg9IjI0IiB5PSIzNCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjEzIiByeD0iNi41IiBmaWxsPSIjM2ZhZThjIi8+PHJlY3QgeD0iMjQiIHk9IjUzIiB3aWR0aD0iMzAiIGhlaWdodD0iMTMiIHJ4PSI2LjUiIGZpbGw9IiNmMjlhNTIiLz48cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MyA2MCkgc2NhbGUoMC42MikiIGQ9Ik0wIDZDLTYgMCAtMTIgLTIgLTEyIC03Qy0xMiAtMTEgLTkgLTEzIC02IC0xM0MtMyAtMTMgLTEgLTExIDAgLTlDMSAtMTEgMyAtMTMgNiAtMTNDOSAtMTMgMTIgLTExIDEyIC03QzEyIC0yIDYgMCAwIDZ6IiBmaWxsPSIjZWY2ZjZjIi8+PHJlY3QgeD0iMjQiIHk9IjcyIiB3aWR0aD0iNTIiIGhlaWdodD0iMTMiIHJ4PSI2LjUiIGZpbGw9IiM1YWE5ZTYiLz48L2c+PC9zdmc+">
+<meta property="og:title" content="Equaly: no crash diets. Mind, food and movement, all essential.">
+<meta property="og:description" content="Built by a coach from 100+ real journeys. Join the waitlist: start with 7 days of Pro, free.">
+<style>[hidden]{display:none!important} img{max-width:100%} body{margin:0}</style>
+<title>Equaly</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="No crash diets. Reach your goal weight at your own pace, with mind, nutrition and exercise working as equals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap">
+<!-- TikTok Pixel: paste your snippet from TikTok Events Manager here -->
+<style>
+  /* Layout: single centered column, alternating soft bands, three equal pillars as the visual motif */
+  :root{
+    --bg:#f6f8f5; --band:#ffffff; --ink:#1f2b28; --muted:#566561;
+    --brand:#2f7d6d; --brand-ink:#ffffff; --brand-dark:#1f5a4e;
+    --food:#d98a3d; --move:#4f8fc4; --line:#dde5e1; --soft:#e7f1ed;
+    --err-bg:#fdecea; --err:#9b2c20;
+    --offer:#d98a3d; --offer-ink:#2a1a08; --offer-soft:#fbeedd;
+    --display:"Fraunces",Georgia,"Times New Roman",serif;
+    --body:"Nunito Sans",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+    --bg:#121a18; --band:#18221f; --ink:#e8efec; --muted:#a3b3ae;
+    --brand:#5fb8a3; --brand-ink:#0d1714; --brand-dark:#8fd3c2;
+    --food:#e6a462; --move:#7fb3e0; --line:#2a3733; --soft:#1e2e29;
+    --err-bg:#3a1d1a; --err:#f2a49a;
+    --offer:#e6a462; --offer-ink:#1f1306; --offer-soft:#33261a; color-scheme:dark }}
+  :root[data-theme="dark"]{
+    --bg:#121a18; --band:#18221f; --ink:#e8efec; --muted:#a3b3ae;
+    --brand:#5fb8a3; --brand-ink:#0d1714; --brand-dark:#8fd3c2;
+    --food:#e6a462; --move:#7fb3e0; --line:#2a3733; --soft:#1e2e29;
+    --err-bg:#3a1d1a; --err:#f2a49a;
+    --offer:#e6a462; --offer-ink:#1f1306; --offer-soft:#33261a; color-scheme:dark }
+
+  *{box-sizing:border-box}
+  .topbar{background:var(--offer);color:var(--offer-ink);font-weight:700;font-size:15px;text-align:center}
+  .topbar .wrap{padding-block:10px}
+  .topbar a{color:inherit;text-decoration:underline;text-underline-offset:3px;margin-left:6px;white-space:nowrap}
+  .offer-box{display:flex;align-items:center;gap:14px;background:var(--offer-soft);border:2px solid var(--offer);border-radius:16px;padding:14px 16px}
+  .offer-box .big{flex:0 0 auto;font-family:var(--display);font-weight:700;font-size:30px;line-height:1;color:var(--offer)}
+  .offer-box .big small{display:block;font-family:var(--body);font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
+  .offer-box p{font-size:15.5px;line-height:1.45}
+  .offer-box strong{display:block;font-size:17px}
+
+  /* Steps */
+  .steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;width:100%;text-align:left}
+  .track{position:absolute;top:44px;left:16.6%;right:16.6%;height:4px;border-radius:2px;background:var(--line);z-index:0}
+  .track .fill{height:100%;width:0;border-radius:2px;background:var(--brand);transition:width .6s ease}
+  .step{position:relative;z-index:1;background:var(--bg);border:2px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0;cursor:pointer;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+  .step .num{align-self:center;width:46px;height:46px;font-size:18px;background:var(--band);color:var(--muted);border:2px solid var(--line);transition:background .35s,color .35s,border-color .35s}
+  .step h3{font-size:21px;text-align:center}
+  .step > p{color:var(--muted);font-size:15.5px;text-align:center}
+  .step.on{transform:translateY(-6px);border-color:var(--brand);box-shadow:0 14px 30px -18px var(--brand)}
+  .step.on .num,.step.done .num{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+  .step:focus-visible{outline:3px solid var(--brand-dark);outline-offset:3px}
+  .demo{background:var(--band);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:4px;font-size:14px}
+  .demo .lbl{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .moods{display:flex;justify-content:space-between;gap:6px}
+  .moods span{flex:1;height:30px;border-radius:9px;background:var(--soft);border:2px solid transparent;transition:all .3s}
+  .moods span:nth-child(4){background:var(--brand);border-color:var(--brand-dark)}
+  .moods-legend{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:6px}
+  .task{display:flex;align-items:center;gap:12px}
+  .play{flex:0 0 38px;height:38px;border-radius:50%;background:var(--move);display:flex;align-items:center;justify-content:center}
+  .play::after{content:"";border-left:12px solid var(--band);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+  .task b{display:block;font-size:15px}
+  .task em{font-style:normal;color:var(--muted);font-size:13px}
+  .week{display:flex;align-items:flex-end;gap:6px;height:56px}
+  .week i{flex:1;border-radius:5px 5px 2px 2px;background:var(--soft);transform-origin:bottom;transition:transform .5s ease}
+  .week i.f{background:var(--brand)}
+  .week i.miss{background:var(--line)}
+  .days{display:flex;gap:6px;font-size:11px;color:var(--muted);margin-top:5px}
+  .days span{flex:1;text-align:center}
+  .step.on .week i{animation:grow .7s ease both}
+  .step.on .week i:nth-child(2){animation-delay:.06s}.step.on .week i:nth-child(3){animation-delay:.12s}.step.on .week i:nth-child(4){animation-delay:.18s}.step.on .week i:nth-child(5){animation-delay:.24s}.step.on .week i:nth-child(6){animation-delay:.3s}.step.on .week i:nth-child(7){animation-delay:.36s}
+  @keyframes grow{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+  .step.on .moods span:nth-child(4){animation:pop .5s ease}
+  @keyframes pop{50%{transform:scale(1.12)}}
+  .step.on .play{animation:pulse 1.6s ease infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 var(--move)}70%{box-shadow:0 0 0 9px transparent}}
+  .dots{display:flex;gap:8px;justify-content:center;margin-top:18px}
+  .dots button{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:var(--line);cursor:pointer;transition:width .3s,background .3s}
+  .dots button.on{width:28px;border-radius:5px;background:var(--brand)}
+  /* Features */
+  .feats{display:grid;grid-template-columns:1.1fr 1fr;gap:18px;margin-top:24px;width:100%;text-align:left}
+  .panel{background:var(--band);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:16px;min-width:0}
+  .panel h3{font-size:22px}
+  .panel > p{color:var(--muted);font-size:15.5px}
+  .tag{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+  .goal{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .ring{width:118px;height:118px;flex:0 0 auto}
+  .ring circle{fill:none;stroke-width:11}
+  .ring .bg{stroke:var(--soft)}
+  .ring .fg{stroke:var(--brand);stroke-linecap:round;stroke-dasharray:289;stroke-dashoffset:110;transform:rotate(-90deg);transform-origin:50% 50%;animation:ring 1.4s ease both}
+  @keyframes ring{from{stroke-dashoffset:289}}
+  .ring text{fill:var(--ink);font-family:var(--display);font-weight:700;font-size:26px}
+  .ring .s{fill:var(--muted);font-family:var(--body);font-size:10px;font-weight:700;letter-spacing:.06em}
+  .goal-txt{flex:1 1 160px;min-width:0;font-size:15px;color:var(--muted)}
+  .goal-txt b{color:var(--ink);font-size:17px;display:block}
+  .trends{display:grid;gap:10px}
+  .trend{display:grid;grid-template-columns:86px 1fr 52px;align-items:center;gap:10px;font-size:14px;font-weight:700}
+  .trend svg{width:100%;height:30px;overflow:visible}
+  .trend polyline{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .trend .pct{text-align:right;color:var(--brand-dark);font-variant-numeric:tabular-nums}
+  .badges{display:flex;gap:8px;flex-wrap:wrap}
+  .badges span{font-size:13px;font-weight:700;background:var(--soft);color:var(--brand-dark);border-radius:999px;padding:5px 12px}
+  .review{display:grid;gap:12px}
+  .rrow{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15px}
+  .pips{display:flex;gap:5px}
+  .pips i{width:16px;height:16px;border-radius:50%;background:var(--soft)}
+  .pips.m i.f{background:var(--brand)} .pips.n i.f{background:var(--food)} .pips.x i.f{background:var(--move)}
+  .note{background:var(--bg);border:1px dashed var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px;color:var(--muted)}
+  .note b{display:block;color:var(--ink);font-size:13px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+  .cta-mid{display:inline-flex;align-items:center;justify-content:center;margin-top:10px;padding:15px 28px;border-radius:14px;background:var(--offer);color:var(--offer-ink);font-weight:800;text-decoration:none}
+  .cta-mid:hover{filter:brightness(1.06)}
+  .cta-mid:focus-visible{outline:3px solid var(--brand-dark);outline-offset:2px}
+
+  .band .panel,.band .faq details{background:var(--bg)}
+  .offerband{background:var(--soft)}
+
+  /* Journey chart */
+  .journey{width:100%;max-width:860px;background:var(--band);border:1px solid var(--line);border-radius:22px;padding:22px;margin-top:20px;display:flex;flex-direction:column;gap:14px;text-align:left}
+  .jhead{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+  .readout{display:grid;grid-template-columns:repeat(4,auto);gap:6px 22px}
+  .readout div{display:flex;flex-direction:column;min-width:0}
+  .readout span{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .readout b{font-family:var(--display);font-size:26px;line-height:1.15;font-variant-numeric:tabular-nums}
+  .readout .hl{color:var(--brand)}
+  .units{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--bg)}
+  .units button{border:0;background:transparent;color:var(--muted);font:700 14px var(--body);padding:6px 14px;border-radius:999px;cursor:pointer}
+  .units button.on{background:var(--brand);color:var(--brand-ink)}
+  .units button:focus-visible{outline:2px solid var(--brand-dark);outline-offset:1px}
+  .chartbox{overflow-x:auto}
+  #jchart{width:100%;min-width:300px;height:auto;display:block}
+  #jchart .grid line{stroke:var(--line);stroke-width:1}
+  #jchart .ax{fill:var(--muted);font:600 12px var(--body);font-variant-numeric:tabular-nums}
+  #jchart .goalline{stroke:var(--offer);stroke-width:2;stroke-dasharray:6 6}
+  #jchart .goallbl{fill:var(--offer);font:800 13px var(--body)}
+  #jchart .startlbl{fill:var(--muted);font:800 13px var(--body)}
+  #jchart .future{fill:none;stroke:var(--muted);stroke-opacity:.45;stroke-width:2.5;stroke-dasharray:3 7;stroke-linecap:round}
+  #jchart .prog{fill:none;stroke:var(--brand);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+  #jchart .area{fill:var(--brand);fill-opacity:.14}
+  #jchart .ms{stroke:var(--offer);stroke-width:2.5}
+  #jchart .ms.hit{fill:var(--offer)} #jchart .ms.no{fill:var(--band)}
+  #jchart .mslbl{font:800 12px var(--body)}
+  #jchart .mslbl.hit{fill:var(--offer)} #jchart .mslbl.no{fill:var(--muted)}
+  #jchart .cursor{stroke:var(--brand);stroke-width:1.5;stroke-dasharray:4 4}
+  #jchart .dot{fill:var(--brand);stroke:var(--band);stroke-width:4}
+  .slabel{font-size:13px;font-weight:700;color:var(--muted)}
+  #jweek{width:100%;accent-color:var(--brand);height:28px;cursor:pointer}
+  .fine{font-size:13px;color:var(--muted)}
+  @media (max-width:560px){ .readout{grid-template-columns:repeat(2,auto)} .readout b{font-size:22px} }
+
+  /* Founder */
+  .trust{display:inline-flex;align-items:center;gap:10px;font-size:14.5px;font-weight:700;color:var(--muted)}
+  .trust b{color:var(--brand-dark)}
+  .trust .av{width:30px;height:30px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:15px}
+  .problem .founder{margin-top:18px;width:100%;max-width:760px;background:var(--band);border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;text-align:left}
+  .founder .stat{display:flex;flex-direction:column;align-items:center;justify-content:center;width:120px;height:120px;border-radius:50%;background:var(--soft);border:3px solid var(--brand)}
+  .founder .stat b{font-family:var(--display);font-size:34px;line-height:1;color:var(--brand)}
+  .founder .stat span{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px;text-align:center}
+  .founder .ftxt{display:flex;flex-direction:column;gap:12px;min-width:0}
+  .founder .tag{align-self:flex-start}
+  .problem .founder p{font-size:17px;color:var(--ink);max-width:none}
+  .problem .founder .sig{font-size:14.5px;color:var(--muted);font-weight:700}
+  @media (max-width:640px){ .problem .founder{grid-template-columns:1fr;justify-items:center} .founder .ftxt{text-align:left} }
+
+  /* Comparison */
+  .vs{width:100%;max-width:860px;margin-top:18px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--band);text-align:left}
+  .vrow{display:grid;grid-template-columns:1fr 1fr}
+  .vrow > div{padding:16px 20px;display:flex;gap:12px;align-items:flex-start;min-width:0;font-size:16px;line-height:1.45}
+  .vrow + .vrow > div{border-top:1px solid var(--line)}
+  .vrow .them{color:var(--muted)}
+  .vrow .us{background:var(--soft);color:var(--ink);font-weight:700}
+  .vhead > div{font-family:var(--display);font-size:19px;font-weight:700;padding-block:18px}
+  .vhead .them{color:var(--muted)}
+  .vhead .us{color:var(--brand-dark)}
+  .ic{flex:0 0 22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;margin-top:1px}
+  .them .ic{background:var(--line);color:var(--muted)}
+  .us .ic{background:var(--brand);color:var(--brand-ink)}
+  @media (max-width:560px){ .vrow > div{padding:14px 12px;font-size:14.5px;gap:8px} .vhead > div{font-size:16px} .ic{flex-basis:18px;height:18px;font-size:10px} }
+  .founder h3{font-size:24px;line-height:1.2}
+
+  /* Testimonials */
+  .quotes{background:var(--soft)}
+  .qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;width:100%;text-align:left}
+  .q{background:var(--band);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px;min-width:0;margin:0}
+  .q blockquote{margin:0;font-size:16.5px;line-height:1.55;color:var(--ink)}
+  .q blockquote::before{content:"\201C";display:block;font-family:var(--display);font-size:44px;line-height:.6;color:var(--brand);margin-bottom:6px}
+  .q figcaption{margin-top:auto;font-weight:700;font-size:15px;color:var(--brand-dark)}
+  .q figcaption span{font-weight:400;color:var(--muted)}
+  .qnote{font-size:13.5px;color:var(--muted);margin-top:8px}
+  @media (max-width:860px){ .qgrid{grid-template-columns:1fr 1fr} }
+  @media (max-width:560px){ .qgrid{grid-template-columns:1fr} }
+  .trust .ttxt{display:flex;flex-direction:column;text-align:left;line-height:1.35}
+  .trust .ttxt b{color:var(--ink);font-size:15.5px}
+  .trust .ttxt > span{font-weight:600;color:var(--muted)}
+  .trust .star{color:var(--food)}
+  .trust .av{flex:0 0 auto;width:38px;height:38px;font-size:17px}
+  /* Community */
+  .comm .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;width:100%;text-align:left}
+  .comm .cc{background:var(--band);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px;min-width:0}
+  .comm .cc h3{font-size:21px}
+  .comm .cc p{color:var(--muted);font-size:16px}
+  .comm .ci{width:44px;height:44px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:var(--soft)}
+  .comm .ci svg{width:24px;height:24px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  @media (max-width:760px){ .comm .cgrid{grid-template-columns:1fr} }
+  .comm .soon{display:inline-flex;align-items:center;gap:8px;background:var(--band);border:1px dashed var(--food);color:var(--ink);font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px}
+  .comm .soon::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--food)}
+  /* Feature list */
+  .fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px;width:100%;text-align:left}
+  .fi{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:flex;flex-direction:column;gap:6px;min-width:0}
+  .fh{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+  .fi h3{font-size:18px;line-height:1.25}
+  .fi p{color:var(--muted);font-size:15px;line-height:1.5}
+  .tag-free,.tag-pro{flex:0 0 auto;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+  .tag-free{background:var(--soft);color:var(--brand-dark)}
+  .tag-pro{background:var(--offer);color:var(--offer-ink)}
+  @media (max-width:860px){ .fgrid{grid-template-columns:1fr 1fr} }
+  @media (max-width:560px){ .fgrid{grid-template-columns:1fr} }
+  /* FAQ */
+  .faq{width:100%;max-width:720px;display:grid;gap:10px;margin-top:16px;text-align:left}
+  .faq details{background:var(--band);border:1px solid var(--line);border-radius:14px;padding:4px 18px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:17px;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brand);font-size:22px;line-height:1}
+  .faq details[open] summary::after{content:"–"}
+  .faq details p{color:var(--muted);padding-bottom:16px;font-size:16px}
+  @media (max-width:760px){ .feats{grid-template-columns:1fr} }
+  /* Sticky CTA */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--band);border-top:1px solid var(--line);box-shadow:0 -10px 30px -18px rgba(0,0,0,.35);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));transform:translateY(0);transition:transform .3s ease}
+  .sticky.off{transform:translateY(110%)}
+  .sticky-in{max-width:1040px;margin:0 auto;padding-block:12px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .sticky p{display:flex;flex-direction:column;line-height:1.3;min-width:0}
+  .sticky p b{font-size:16px;color:var(--offer)}
+  .sticky p span{font-size:13px;color:var(--muted)}
+  .sticky-btn{flex:0 0 auto;background:var(--brand);color:var(--brand-ink);font-weight:800;text-decoration:none;padding:13px 22px;border-radius:12px}
+  .sticky-btn:hover{filter:brightness(1.08)}
+  .sticky-btn:focus-visible{outline:3px solid var(--brand-dark);outline-offset:2px}
+  footer .wrap{padding-bottom:110px!important}
+  .band .journey,.band .step{background:var(--bg)}
+  .step{background:var(--band)}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;margin:0}
+  .wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-.01em}
+  p{margin:0}
+
+  header .wrap{padding-block:22px;display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:23px;color:var(--brand-dark)}
+  .mark{width:21px;height:28px;flex:0 0 auto}
+
+  .hero .wrap{padding-block:32px 64px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px}
+  .eyebrow{background:var(--soft);color:var(--brand-dark);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+  h1{font-size:clamp(34px,6vw,58px);line-height:1.08;max-width:16ch}
+  h1 span{color:var(--brand)}
+  .sub{font-size:clamp(18px,2.4vw,20px);color:var(--muted);max-width:42ch}
+
+  form.signup{width:100%;max-width:470px;display:flex;flex-direction:column;gap:12px;text-align:left}
+  .field{display:flex;gap:10px;flex-wrap:wrap}
+  .field input{flex:1 1 220px;min-width:0;padding:15px 18px;font:inherit;border:2px solid var(--line);border-radius:14px;background:var(--band);color:var(--ink)}
+  .field input:focus-visible{outline:none;border-color:var(--brand)}
+  .btn{flex:1 0 auto;padding:15px 24px;font:700 17px var(--body);border:0;border-radius:14px;cursor:pointer;background:var(--brand);color:var(--brand-ink)}
+  .btn:hover{filter:brightness(1.08)}
+  .btn:focus-visible{outline:3px solid var(--brand-dark);outline-offset:2px}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--muted)}
+  .consent input{margin-top:3px;accent-color:var(--brand);width:17px;height:17px;flex:0 0 auto}
+  .consent a{color:var(--brand-dark)}
+  .perk{font-size:14.5px;color:var(--brand-dark);font-weight:700;text-align:center}
+  .msg{padding:14px 16px;border-radius:12px;font-size:15.5px}
+  .msg.ok{background:var(--soft);color:var(--brand-dark)}
+  .msg.err{background:var(--err-bg);color:var(--err)}
+
+  section.band{background:var(--band);border-block:1px solid var(--line)}
+  .sec{padding-block:64px;display:flex;flex-direction:column;gap:16px}
+  .center{text-align:center;align-items:center}
+  h2{font-size:clamp(28px,4.2vw,40px);line-height:1.15}
+  .lead{color:var(--muted);max-width:60ch;font-size:18px}
+  .problem p{font-size:19px;color:var(--muted);max-width:56ch}
+  .problem strong{color:var(--ink)}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px;width:100%;text-align:left}
+  .card{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:8px;min-width:0}
+  section:not(.band) .card{background:var(--band)}
+  .card h3{font-size:21px}
+  .card p{color:var(--muted);font-size:16px}
+  .bar{height:6px;width:44px;border-radius:3px}
+  .num{width:36px;height:36px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-weight:800;display:flex;align-items:center;justify-content:center}
+
+  .list{list-style:none;padding:0;margin:8px auto 0;display:grid;gap:14px;max-width:640px;justify-items:start;text-align:left}
+  .list li{display:flex;gap:14px;align-items:flex-start;font-size:18px}
+  .list li::before{content:"✓";flex:0 0 24px;height:24px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:3px}
+
+  footer .wrap{padding-block:40px 56px;color:var(--muted);font-size:13.5px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+  footer p{max-width:640px}
+
+  @media (max-width:760px){
+    .grid,.steps{grid-template-columns:1fr}
+    .track{display:none}
+    .step.on{transform:none}
+    .offer-box .big{font-size:26px}
+    .sec{padding-block:48px}
+  }
+</style>
+<style>
+#confirmed-view{display:none}
+body.is-confirmed > *{display:none!important}
+body.is-confirmed > #confirmed-view{display:flex!important}
+#confirmed-view{min-height:100vh;align-items:center;justify-content:center;padding:32px max(16px,env(safe-area-inset-left,0px))}
+#confirmed-view .ccard{width:100%;max-width:560px;background:var(--band);border:1px solid var(--line);border-radius:24px;padding:36px 28px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px}
+#confirmed-view .cmark{display:inline-flex;gap:5px}
+#confirmed-view .cmark i{width:12px;height:36px;border-radius:6px}
+#confirmed-view .cmark i:nth-child(1){background:var(--brand)}#confirmed-view .cmark i:nth-child(2){background:var(--food)}#confirmed-view .cmark i:nth-child(3){background:var(--move)}
+#confirmed-view h1{font-size:clamp(30px,6vw,40px);margin:0}
+#confirmed-view p{margin:0;color:var(--muted);max-width:44ch}
+#confirmed-view .cperk{background:var(--soft);color:var(--brand-dark);font-weight:700;border-radius:14px;padding:12px 16px}
+#confirmed-view ol{text-align:left;margin:4px 0 0;padding-left:22px;color:var(--muted);display:grid;gap:6px;max-width:44ch}
+#confirmed-view ol b{color:var(--ink)}
+#confirmed-view a.cbtn{margin-top:8px;background:var(--brand);color:var(--brand-ink);font-weight:700;text-decoration:none;padding:14px 26px;border-radius:14px}
+</style>
+<script>if(/[?&]confirmed\b/.test(location.search)){document.documentElement.classList.add('pre-confirmed');document.addEventListener('DOMContentLoaded',function(){document.body.classList.add('is-confirmed');document.title="You're on the list | Equaly";});}</script>
+</head>
+<body>
+
+
+<div class="topbar"><div class="wrap">Launch offer: everyone gets 7 days of Pro, free.<a href="#join">Join the waitlist</a></div></div>
+
+<header><div class="wrap"><svg class="mark" viewBox="22 8 56 79" aria-hidden="true"><path d="M49 35Q48 30 46 26" stroke="#8a5a3c" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M50 30Q65.0 25.6 66 10Q51.0 14.4 50 30z" fill="#5cc06b"/><rect x="24" y="34" width="52" height="13" rx="6.5" fill="#3fae8c"/><rect x="24" y="53" width="30" height="13" rx="6.5" fill="#f29a52"/><path transform="translate(63 60) scale(0.62)" d="M0 6C-6 0 -12 -2 -12 -7C-12 -11 -9 -13 -6 -13C-3 -13 -1 -11 0 -9C1 -11 3 -13 6 -13C9 -13 12 -11 12 -7C12 -2 6 0 0 6z" fill="#ef6f6c"/><rect x="24" y="72" width="52" height="13" rx="6.5" fill="#5aa9e6"/></svg>Equaly</div></header>
+
+<main>
+  <section class="hero"><div class="wrap">
+    <span class="eyebrow">Coming soon</span>
+    <h1>No crash diets. <span>Mind, food and movement:</span> all essential.</h1>
+    <p class="sub">Reach your goal weight at your own pace, with mind, nutrition and exercise working as equals. No shame. No quick fixes.</p>
+    <form class="signup" data-form id="join">
+      <div class="offer-box">
+        <span class="big">7 days<small>Pro, free</small></span>
+        <p><strong>For everyone who joins.</strong>Mind tools, unlimited coach, meal plans and every session. Then the free version stays free.</p>
+      </div>
+      <div class="field">
+        <input id="email-top" type="email" name="email" placeholder="Your email" required autocomplete="email" aria-label="Email address">
+        <button class="btn" type="submit">Join the waitlist (free)</button>
+      </div>
+      <label class="consent"><input id="consent-top" type="checkbox" required><span>I agree to receive emails about Equaly's launch. I can unsubscribe at any time. See our <a href="#privacy">privacy notice</a>.</span></label>
+      <div class="msg" role="status" aria-live="polite" hidden></div>
+    </form>
+    <p class="trust"><span class="av" aria-hidden="true">B</span><span class="ttxt"><b>Built by Ben Zaki</b><span>100+ people coached in person <span class="star" aria-hidden="true">&#9733;</span></span></span></p>
+  </div></section>
+
+  <section class="band"><div class="wrap sec center">
+    <span class="eyebrow">Your journey</span>
+    <h2>See where you're headed.</h2>
+    <p class="lead">Set your goal, and Equaly turns it into a path you watch climb, week after week. Every milestone gets celebrated.</p>
+    <div class="journey">
+      <div class="jhead">
+        <div class="readout" aria-live="polite">
+          <div><span>Week</span><b id="jw">12</b></div>
+          <div><span>Lost</span><b id="jlost" class="hl">−5.7 kg</b></div>
+          <div><span>Now</span><b id="jcur">94.3 kg</b></div>
+          <div><span>To goal</span><b id="jpct">29%</b></div>
+        </div>
+        <div class="units" role="group" aria-label="Units"><button id="u-kg" class="on" type="button">kg</button><button id="u-lb" type="button">lb</button></div>
+      </div>
+      <div class="chartbox"><svg id="jchart" viewBox="0 0 640 320" role="img" aria-label="Example journey from 100 kg to a goal of 80 kg over 34 weeks"></svg></div>
+      <label for="jweek" class="slabel">Drag to move through the weeks</label>
+      <input type="range" id="jweek" min="0" max="34" step="1" value="12">
+      <p class="fine">Example only: a journey from 100 kg to 80 kg at about 0.6 kg a week, in line with the 0.5 to 1 kg a week often advised for lasting results. Plateaus are normal, and your own pace will be different.</p>
+    </div>
+    <a class="cta-mid" href="#join">Start my journey: 7 days of Pro free</a>
+  </div></section>
+
+  <section class="quotes"><div class="wrap sec center">
+    <span class="eyebrow">Real people, real journeys</span>
+    <h2>What Ben's coaching clients say</h2>
+    <p class="lead">Before Equaly became an app, this approach was tested one-on-one with more than 100 people.</p>
+    <div class="qgrid">
+      <figure class="q"><blockquote>I thought exercise alone was enough, and I was so hard on myself. Then Ben explained that food and mindset matter just as much. Today I'm proud of myself, and I'm almost at my goal weight. THANK YOU!</blockquote><figcaption>Cassandra<span>, 24</span></figcaption></figure>
+      <figure class="q"><blockquote>I was overweight and spent 3 months going in circles, until I put my trust in Ben. I got a simple plan to follow and plenty of motivation. Today I'm at my ideal weight, I move better and I live better.</blockquote><figcaption>Rick<span>, 40</span></figcaption></figure>
+      <figure class="q"><blockquote>Being overweight at my age is a real struggle, and losing weight is incredibly hard. It took time, but today I can finally do everyday things with ease. I highly recommend him.</blockquote><figcaption>Isma<span>, 50</span></figcaption></figure>
+      <figure class="q"><blockquote>I thought my YouTube workouts were enough, but they just didn't fit my schedule or my needs. Ben adapted everything to me. I lost 13 kg in 4 months, and I feel so much better.</blockquote><figcaption>Cindy<span>, 25</span></figcaption></figure>
+      <figure class="q"><blockquote>I didn't believe it was possible, but Ben always kept me motivated. It took time, but I got there.</blockquote><figcaption>Daphné<span>, 36</span></figcaption></figure>
+      <figure class="q"><blockquote>It's amazing how much time Ben takes for us. I feel understood. He adapts to you, and his approach is different from anything else.</blockquote><figcaption>Isa<span>, 26</span></figcaption></figure>
+    </div>
+    <p class="qnote">Testimonials from Ben's one-on-one coaching clients, shared with their permission. Individual results vary.</p>
+  </div></section>
+
+  <section><div class="wrap sec center problem">
+    <h2>It was never about willpower.</h2>
+    <p>You've probably tried diets, apps and programs before. A slip-up happens, you feel like you failed, and you stop.</p>
+    <p><strong>Most programs forget that your mind matters as much as your plate.</strong> Equaly is built around that.</p>
+    <div class="founder">
+      <div class="stat"><b>100+</b><span>People<br>coached</span></div>
+      <div class="ftxt">
+        <span class="tag">Who's behind Equaly</span>
+        <h3>I'm Ben. I've done this in real life, not on a whiteboard.</h3>
+        <p>I'm a weight loss coach. I've worked one-on-one with more than 100 people living with overweight, obesity and severe obesity.</p>
+        <p>I quickly saw it was never just about exercise. Three pillars came back with every single client: the mind, food and movement. And each one had to be adapted to the person, because no two bodies, lives or stories are the same.</p>
+        <p>Equaly comes straight from the field. Everything in it has been tested with real people, in real life: the approach I use with my clients, now with you every day.</p>
+        <p class="sig">Ben Zaki, founder of Equaly and weight loss coach</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="band"><div class="wrap sec center">
+    <h2>Three pillars. Same level.</h2>
+    <p class="lead">Lasting change needs all three working together. None of them is a bonus.</p>
+    <div class="grid">
+      <div class="card"><span class="bar" style="background:var(--brand)"></span><h3>Mind</h3><p>Daily check-ins, tools for cravings and guilt, and a kind way to restart after a bad day.</p></div>
+      <div class="card"><span class="bar" style="background:var(--food)"></span><h3>Food</h3><p>Simple, realistic nutrition guidance. No obsessive counting, no forbidden foods.</p></div>
+      <div class="card"><span class="bar" style="background:var(--move)"></span><h3>Movement</h3><p>Gentle sessions of 5 to 20 minutes, built for bodies that aren't used to moving.</p></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap sec center">
+    <h2>One small thing a day.</h2>
+    <p class="lead">Not ten rules. Just the next step.</p>
+    <div class="steps" id="steps">
+      <div class="track" aria-hidden="true"><div class="fill"></div></div>
+      <div class="step on" tabindex="0" data-i="0">
+        <span class="num">1</span>
+        <h3>Check in</h3>
+        <p>Tell us how you feel today. It takes 30 seconds.</p>
+        <div class="demo" aria-hidden="true">
+          <div class="lbl">How's your energy?</div>
+          <div class="moods"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="moods-legend"><span>Low</span><span>Great</span></div>
+        </div>
+      </div>
+      <div class="step" tabindex="0" data-i="1">
+        <span class="num">2</span>
+        <h3>Get one thing to do</h3>
+        <p>A gentle session, a tool for a craving, or one simple food tip, chosen for your day.</p>
+        <div class="demo" aria-hidden="true">
+          <div class="lbl">Today's one thing</div>
+          <div class="task"><span class="play"></span><div><b>Seated mobility flow</b><em>Movement · 8 min · low impact</em></div></div>
+        </div>
+      </div>
+      <div class="step" tabindex="0" data-i="2">
+        <span class="num">3</span>
+        <h3>See your progress</h3>
+        <p>Slipped up? Restart tomorrow without judgment. No starting from zero.</p>
+        <div class="demo" aria-hidden="true">
+          <div class="lbl">This week</div>
+          <div class="week"><i class="f" style="height:55%"></i><i class="f" style="height:70%"></i><i class="miss" style="height:25%"></i><i class="f" style="height:60%"></i><i class="f" style="height:80%"></i><i class="f" style="height:75%"></i><i style="height:40%"></i></div>
+          <div class="days"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="dots" role="tablist" aria-label="Steps"><button class="on" aria-label="Step 1"></button><button aria-label="Step 2"></button><button aria-label="Step 3"></button></div>
+  </div></section>
+
+  <section class="band"><div class="wrap sec center">
+    <span class="eyebrow">Inside the app</span>
+    <h2>Watch yourself move forward.</h2>
+    <p class="lead">Your progress isn't just a number on a scale. Equaly tracks your mind, your food and your movement, and shows you how far you've come.</p>
+    <div class="feats">
+      <div class="panel">
+        <h3>Progress you can see</h3>
+        <div class="goal">
+          <svg class="ring" viewBox="0 0 118 118" role="img" aria-label="62 percent of the way to the goal">
+            <circle class="bg" cx="59" cy="59" r="46"></circle>
+            <circle class="fg" cx="59" cy="59" r="46"></circle>
+            <text x="59" y="62" text-anchor="middle">62%</text>
+            <text class="s" x="59" y="80" text-anchor="middle">TO GOAL</text>
+          </svg>
+          <p class="goal-txt"><b>Toward your goal weight</b>A clear percentage shows how far you've come, at your own pace.</p>
+        </div>
+        <div class="trends">
+          <div class="trend"><span>Mind</span><svg viewBox="0 0 120 30" preserveAspectRatio="none" aria-hidden="true"><polyline style="stroke:var(--brand)" points="0,24 20,22 40,18 60,20 80,12 100,10 120,6"></polyline></svg><span class="pct">+18%</span></div>
+          <div class="trend"><span>Food</span><svg viewBox="0 0 120 30" preserveAspectRatio="none" aria-hidden="true"><polyline style="stroke:var(--food)" points="0,22 20,20 40,21 60,15 80,14 100,11 120,9"></polyline></svg><span class="pct">+12%</span></div>
+          <div class="trend"><span>Movement</span><svg viewBox="0 0 120 30" preserveAspectRatio="none" aria-hidden="true"><polyline style="stroke:var(--move)" points="0,26 20,23 40,19 60,17 80,13 100,8 120,5"></polyline></svg><span class="pct">+24%</span></div>
+        </div>
+        <div class="badges"><span>5-day streak</span><span>First 10-min session</span><span>Calm after a craving</span></div>
+      </div>
+      <div class="panel">
+        <span class="tag">Every Sunday</span>
+        <h3>Your weekly review</h3>
+        <p>Once a week, Equaly asks you to look back on your mind, your food and your movement. Two minutes to see what helped, and adjust your next week.</p>
+        <div class="review">
+          <div class="rrow">Mind<span class="pips m"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i></span></div>
+          <div class="rrow">Food<span class="pips n"><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i></span></div>
+          <div class="rrow">Movement<span class="pips x"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></span></div>
+        </div>
+        <div class="note"><b>Your note</b>"Walking after dinner helped with evening cravings. Keep it this week."</div>
+      </div>
+    </div>
+    <a class="cta-mid" href="#join">Get my 7 days of Pro</a>
+  </div></section>
+
+  <section class="comm"><div class="wrap sec center">
+    <span class="eyebrow">You're not alone</span>
+    <h2>Move forward together.</h2>
+    <p class="lead">Nobody gets there alone. With Equaly Pro, you join a community of people on the same journey, who know exactly what you're going through.</p>
+    <div class="cgrid">
+      <div class="cc"><span class="ci"><svg viewBox="0 0 24 24" style="stroke:var(--brand)"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><h3>Talk it through</h3><p>Share how your week went, ask questions and get answers from people who've been there.</p></div>
+      <div class="cc"><span class="ci"><svg viewBox="0 0 24 24" style="stroke:var(--food)"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></svg></span><h3>Swap your tips</h3><p>Easy recipes, ways to beat cravings, workouts that fit a busy day: the little things that work.</p></div>
+      <div class="cc"><span class="ci"><svg viewBox="0 0 24 24" style="stroke:var(--move)"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6c-2.3 4.6-9.3 9-9.3 9z"/></svg></span><h3>Stay motivated</h3><p>Celebrate each other's wins, and get a boost on the days you feel like giving up.</p></div>
+    </div>
+  </div></section>
+
+  <section class="band"><div class="wrap sec center">
+    <span class="eyebrow">Everything inside</span>
+    <h2>All you need, in one app.</h2>
+    <p class="lead">Start free and keep it free as long as you like. Go Pro when you want the full program.</p>
+    <div class="fgrid">
+      <div class="fi"><div class="fh"><h3>Your personal plan</h3><span class="tag-free">Free</span></div><p>Built from your story: your goal, your level, your schedule.</p></div>
+      <div class="fi"><div class="fh"><h3>Daily check-in</h3><span class="tag-free">Free</span></div><p>Tell us how you feel in 30 seconds: mood, energy, cravings.</p></div>
+      <div class="fi"><div class="fh"><h3>One thing to do today</h3><span class="tag-free">Free</span></div><p>A walk, a gentle session or a food tip, chosen for your day.</p></div>
+      <div class="fi"><div class="fh"><h3>Weight and goal chart</h3><span class="tag-free">Free</span></div><p>Log your weight at your own pace and watch your curve move toward your goal.</p></div>
+      <div class="fi"><div class="fh"><h3>Starter sessions and food tips</h3><span class="tag-free">Free</span></div><p>6 gentle workouts and the plate method to get going.</p></div>
+      <div class="fi"><div class="fh"><h3>Your coach</h3><span class="tag-free">Free</span></div><p>3 messages a week, by voice or text. Unlimited with Pro.</p></div>
+      <div class="fi"><div class="fh"><h3>Mind tools</h3><span class="tag-pro">Pro</span></div><p>Beat cravings, restart without guilt, find your motivation, sleep better. The part that makes it last.</p></div>
+      <div class="fi"><div class="fh"><h3>Check my plate</h3><span class="tag-pro">Pro</span></div><p>Say what you're about to eat: we help with the portions. No counting, no forbidden foods.</p></div>
+      <div class="fi"><div class="fh"><h3>Community</h3><span class="tag-pro">Pro</span></div><p>Chat, a results wall and group challenges with people on the same journey.</p></div>
+      <div class="fi"><div class="fh"><h3>Weekly meal plans</h3><span class="tag-pro">Pro</span></div><p>Simple, realistic meals and a ready-made shopping list.</p></div>
+      <div class="fi"><div class="fh"><h3>Sunday review and mood tracking</h3><span class="tag-pro">Pro</span></div><p>A weekly look at your mood and habits, and a plan that adapts to how your week really went.</p></div>
+      <div class="fi"><div class="fh"><h3>Full workout library</h3><span class="tag-pro">Pro</span></div><p>Every session, from 5 to 20 minutes, including seated and low-impact.</p></div>
+    </div>
+    <a class="cta-mid" href="#join">Get 7 days of Pro, free</a>
+  </div></section>
+
+  <section><div class="wrap sec center">
+    <span class="eyebrow">Why choose Equaly</span>
+    <h2>Built from the field, not from a template.</h2>
+    <p class="lead">Equaly was built on the ground, with more than 100 real people living with overweight and obesity. Here's what that changes for you.</p>
+    <div class="vs" role="table" aria-label="Most weight loss apps compared with Equaly">
+      <div class="vrow vhead" role="row"><div class="them" role="columnheader">Most weight loss apps</div><div class="us" role="columnheader">Equaly</div></div>
+      <div class="vrow" role="row"><div class="them" role="cell"><span class="ic" aria-hidden="true">✕</span>One plan for everyone</div><div class="us" role="cell"><span class="ic" aria-hidden="true">✓</span>Adapted to you: your body, your pace, your life</div></div>
+      <div class="vrow" role="row"><div class="them" role="cell"><span class="ic" aria-hidden="true">✕</span>Calories and workouts first, the mind as an afterthought</div><div class="us" role="cell"><span class="ic" aria-hidden="true">✓</span>Mind, food and movement, all at the same level</div></div>
+      <div class="vrow" role="row"><div class="them" role="cell"><span class="ic" aria-hidden="true">✕</span>Workouts made for people who already train</div><div class="us" role="cell"><span class="ic" aria-hidden="true">✓</span>Gentle sessions for bodies that aren't used to moving</div></div>
+      <div class="vrow" role="row"><div class="them" role="cell"><span class="ic" aria-hidden="true">✕</span>A slip-up feels like failure</div><div class="us" role="cell"><span class="ic" aria-hidden="true">✓</span>A slip-up is part of the journey. Restart tomorrow.</div></div>
+      <div class="vrow" role="row"><div class="them" role="cell"><span class="ic" aria-hidden="true">✕</span>Fast results that rarely last</div><div class="us" role="cell"><span class="ic" aria-hidden="true">✓</span>Habits that last, at your own pace</div></div>
+    </div>
+    <a class="cta-mid" href="#join">Join Equaly: 7 days of Pro free</a>
+  </div></section>
+
+  <section class="band"><div class="wrap sec center">
+    <h2>Questions you might have</h2>
+    <div class="faq">
+      <details><summary>Is Equaly free?</summary><p>Yes. The free version is free for as long as you like: your personal plan, daily check-ins, daily walks, starter sessions, weight tracking and your coach 3 times a week. Pro adds the mind tools, the unlimited coach, Check my plate, the community, weekly meal plans and every session.</p></details>
+      <details><summary>What happens after my 7 days of Pro?</summary><p>You choose. Keep using the free version at no cost, or subscribe to Pro for £14.99 a month ($14.99 in the US). Nothing is charged automatically: Pro simply switches off and you carry on with the free version. We'll remind you before your 7 days end.</p></details>
+      <details><summary>I haven't exercised in years. Is it for me?</summary><p>That's exactly who it's built for. Sessions start at 5 minutes, are low impact, and some can be done seated. Check with your doctor before starting, especially if you have a health condition.</p></details>
+      <details><summary>Is this another diet?</summary><p>No. There are no forbidden foods and no crash plans. You get simple, realistic guidance and work on your mindset at the same time.</p></details>
+      <details><summary>When does Equaly launch?</summary><p>Soon. Waitlist members hear first and get early access before anyone else.</p></details>
+    </div>
+  </div></section>
+
+  <section class="offerband"><div class="wrap sec center">
+    <span class="eyebrow">Founding members</span>
+    <h2>Start with 7 days of Pro, free.</h2>
+    <p class="lead">Equaly will always have a free version. When you start, you get 7 full days of Pro: the mind tools, the unlimited coach, Check my plate, the community, meal plans and every session. After that, keep the free version or upgrade. Your choice.</p>
+    <form class="signup" data-form>
+      <div class="field">
+        <input id="email-bottom" type="email" name="email" placeholder="Your email" required autocomplete="email" aria-label="Email address">
+        <button class="btn" type="submit">Join the waitlist (free)</button>
+      </div>
+      <label class="consent"><input id="consent-bottom" type="checkbox" required><span>I agree to receive emails about Equaly's launch. I can unsubscribe at any time. See our <a href="#privacy">privacy notice</a>.</span></label>
+      <div class="msg" role="status" aria-live="polite" hidden></div>
+    </form>
+  </div></section>
+</main>
+
+<div class="sticky" id="sticky" hidden>
+  <div class="sticky-in">
+    <p><b>7 days of Pro, free</b><span>For everyone at launch</span></p>
+    <a class="sticky-btn" href="#join" id="sticky-btn">Join the waitlist</a>
+  </div>
+</div>
+
+<footer><div class="wrap">
+  <p><strong>Equaly does not replace medical advice.</strong> Talk to your doctor before changing your diet or starting an exercise program, especially if you have a health condition. If you think you may be struggling with an eating disorder, please reach out to a healthcare professional.</p>
+  <p id="privacy">Your email is used only to contact you about Equaly and is handled in line with GDPR. You can unsubscribe or ask for deletion at any time: hello@getequaly.com</p>
+  <p><a href="/privacy">Privacy policy</a> · <a href="/terms">Terms of use</a> · <a href="/legal">Legal notice</a></p>
+  <p>© <span id="y"></span> Equaly</p>
+</div></footer>
+
+<script>
+  // Paste your Brevo / MailerLite form endpoint here. Empty = test mode (nothing is saved).
+  var FORM_ENDPOINT = "https://568fc77b.sibforms.com/serve/MUIFAI5ippG0kosTe50Wyy0oY_pwW57e7qXOYSRVr1uYmLkkvuc7PYoUr0hIxx3skuPV7bi1LccNzVTE-yMAZQDFuO2nCsMLJaAYC_7E8frjCYaf42qG1OjkhKxKICZ_Yy8xiln-MAIDlwCYIKk8sAVrbiYtiJTyPfbenmy8SE8vtI7ukMWtO9d-bBijBVDfJAC00YJz18shKr-7wg==";
+
+  // Influencer tracking: equaly.com/?ref=sarah saves "sarah" with the signup (Brevo field REF)
+  var REF = "";
+  try {
+    var m = location.search.match(/[?&]ref=([A-Za-z0-9_-]{1,40})/);
+    if (m) { REF = m[1].toLowerCase(); sessionStorage.setItem("equaly_ref", REF); }
+    else { REF = sessionStorage.getItem("equaly_ref") || ""; }
+  } catch (e) {}
+  document.getElementById("y").textContent = new Date().getFullYear();
+
+  // Journey chart (example data, kg)
+  (function(){
+    var svg = document.getElementById("jchart"); if (!svg) return;
+    var key = [[0,100],[2,98.6],[4,97.3],[6,96.4],[8,95.2],[10,94.6],[12,94.3],[14,93.0],[16,91.6],[18,90.3],[20,89.0],[22,87.6],[24,86.0],[26,84.7],[28,83.5],[30,82.4],[32,81.2],[34,80.0]];
+    var START = 100, GOAL = 80, MAXW = 34, unit = "kg";
+    function kgAt(w){ for (var i = 1; i < key.length; i++){ if (w <= key[i][0]) { var a = key[i-1], b = key[i]; return a[1] + (b[1]-a[1]) * (w-a[0]) / (b[0]-a[0]); } } return GOAL; }
+    var L = 62, R = 616, T = 46, B = 286;
+    function X(w){ return L + w / MAXW * (R - L); }
+    function Y(kg){ return B - (START - kg) / (START - GOAL) * (B - T); }
+    function conv(kg){ return unit === "kg" ? kg : kg * 2.20462; }
+    function fmt(v, d){ return v.toFixed(d).replace(/\.0$/, ""); }
+    var NS = "http://www.w3.org/2000/svg";
+    function el(tag, attrs, text){ var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; return e; }
+    var pts = []; for (var w = 0; w <= MAXW; w++) pts.push([w, kgAt(w)]);
+    var miles = [{kg:95, lbl:function(){ return "−" + fmt(conv(5),0) + " " + unit; }}, {kg:90, lbl:function(){ return "Halfway"; }}, {kg:85, lbl:function(){ return "−" + fmt(conv(15),0) + " " + unit; }}];
+    function weekOf(kg){ for (var w = 0; w <= MAXW; w += 0.1) if (kgAt(w) <= kg + 1e-9) return w; return MAXW; }
+    function render(cur){
+      while (svg.firstChild) svg.removeChild(svg.firstChild);
+      var g = el("g", {"class":"grid"}); svg.appendChild(g);
+      [100,95,90,85,80].forEach(function(kg){
+        g.appendChild(el("line", {x1:L, x2:R, y1:Y(kg), y2:Y(kg)}));
+        svg.appendChild(el("text", {"class":"ax", x:L-10, y:Y(kg)+4, "text-anchor":"end"}, fmt(conv(kg),0)));
+      });
+      [0,6,12,18,24,30,34].forEach(function(w){ svg.appendChild(el("text", {"class":"ax", x:X(w), y:B+24, "text-anchor":"middle"}, "W" + w)); });
+      svg.appendChild(el("line", {"class":"goalline", x1:L, x2:R, y1:Y(GOAL), y2:Y(GOAL)}));
+      svg.appendChild(el("text", {"class":"goallbl", x:R, y:Y(GOAL)-12, "text-anchor":"end"}, "Goal " + fmt(conv(GOAL),0) + " " + unit));
+      svg.appendChild(el("text", {"class":"startlbl", x:L+8, y:B-10}, "Start " + fmt(conv(START),0) + " " + unit));
+      var all = pts.map(function(p){ return X(p[0]) + "," + Y(p[1]); }).join(" ");
+      svg.appendChild(el("polyline", {"class":"future", points:all}));
+      var done = pts.filter(function(p){ return p[0] <= cur; });
+      var line = done.map(function(p){ return X(p[0]) + "," + Y(p[1]); }).join(" ");
+      if (done.length > 1){
+        svg.appendChild(el("polygon", {"class":"area", points: X(0) + "," + B + " " + line + " " + X(cur) + "," + B}));
+        svg.appendChild(el("polyline", {"class":"prog", points:line}));
+      }
+      miles.forEach(function(m){
+        var w = weekOf(m.kg), hit = cur >= w, c = hit ? "hit" : "no";
+        svg.appendChild(el("circle", {"class":"ms " + c, cx:X(w), cy:Y(m.kg), r:7}));
+        svg.appendChild(el("text", {"class":"mslbl " + c, x:X(w)-12, y:Y(m.kg)-14, "text-anchor":"end"}, m.lbl()));
+      });
+      var gHit = cur >= MAXW;
+      svg.appendChild(el("circle", {"class":"ms " + (gHit ? "hit" : "no"), cx:X(MAXW), cy:Y(GOAL), r:8}));
+      var k = kgAt(cur);
+      svg.appendChild(el("line", {"class":"cursor", x1:X(cur), x2:X(cur), y1:Y(k), y2:B}));
+      svg.appendChild(el("circle", {"class":"dot", cx:X(cur), cy:Y(k), r:9}));
+      document.getElementById("jw").textContent = cur;
+      document.getElementById("jlost").textContent = (cur ? "−" : "") + fmt(conv(START - k), 1) + " " + unit;
+      document.getElementById("jcur").textContent = fmt(conv(k), 1) + " " + unit;
+      document.getElementById("jpct").textContent = Math.round((START - k) / (START - GOAL) * 100) + "%";
+    }
+    var range = document.getElementById("jweek");
+    range.addEventListener("input", function(){ render(+range.value); });
+    function setUnit(u){ unit = u; document.getElementById("u-kg").classList.toggle("on", u === "kg"); document.getElementById("u-lb").classList.toggle("on", u === "lb"); render(+range.value); }
+    document.getElementById("u-kg").addEventListener("click", function(){ setUnit("kg"); });
+    document.getElementById("u-lb").addEventListener("click", function(){ setUnit("lb"); });
+    render(+range.value);
+    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!still && "IntersectionObserver" in window){
+      var played = false;
+      new IntersectionObserver(function(es, o){
+        if (played || !es[0].isIntersecting) return; played = true; o.disconnect();
+        var target = +range.value, w = 0;
+        var t = setInterval(function(){ range.value = w; render(w); if (++w > target) clearInterval(t); }, 70);
+      }, {threshold:.5}).observe(svg);
+    }
+  })();
+
+  // Sticky CTA: shows once the top form is out of view, hides when any signup form is visible
+  (function(){
+    var bar = document.getElementById("sticky"), forms = [].slice.call(document.querySelectorAll("[data-form]"));
+    if (!bar || !("IntersectionObserver" in window)) return;
+    var seen = new Map(), top = forms[0], passed = false, joined = false;
+    bar.hidden = false; bar.classList.add("off");
+    function update(){
+      var anyVisible = false; seen.forEach(function(v){ if (v) anyVisible = true; });
+      bar.classList.toggle("off", joined || !passed || anyVisible);
+    }
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        seen.set(e.target, e.isIntersecting);
+        if (e.target === top) passed = !e.isIntersecting && e.boundingClientRect.top < 0;
+      });
+      update();
+    }, {threshold:0.15});
+    forms.forEach(function(f){ io.observe(f); });
+    document.getElementById("sticky-btn").addEventListener("click", function(e){
+      e.preventDefault();
+      top.scrollIntoView({behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"center"});
+      setTimeout(function(){ var i = top.querySelector("input[type=email]"); if (i && !i.closest("[hidden]")) i.focus({preventScroll:true}); }, 450);
+    });
+    forms.forEach(function(f){ f.addEventListener("submit", function(){ joined = true; update(); }); });
+  })();
+
+  // Steps: auto-advance, click or tap to pick
+  (function(){
+    var steps = [].slice.call(document.querySelectorAll(".step"));
+    var dots = [].slice.call(document.querySelectorAll(".dots button"));
+    var fill = document.querySelector(".track .fill");
+    var cur = 0, timer = null;
+    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function show(i){
+      cur = i;
+      steps.forEach(function(s, k){ s.classList.toggle("on", k === i); s.classList.toggle("done", k < i); });
+      dots.forEach(function(d, k){ d.classList.toggle("on", k === i); });
+      if (fill) fill.style.width = (i / (steps.length - 1) * 100) + "%";
+    }
+    function start(){ if (still) return; clearInterval(timer); timer = setInterval(function(){ show((cur + 1) % steps.length); }, 3200); }
+    steps.forEach(function(s, k){
+      s.addEventListener("click", function(){ show(k); start(); });
+      s.addEventListener("keydown", function(e){ if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(k); start(); } });
+    });
+    dots.forEach(function(d, k){ d.addEventListener("click", function(){ show(k); start(); }); });
+    show(0); start();
+  })();
+  document.querySelectorAll("[data-form]").forEach(function(form){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var msg = form.querySelector(".msg"), btn = form.querySelector(".btn");
+      var email = form.querySelector("input[type=email]").value.trim();
+      function ok(){
+        msg.hidden = false; msg.className = "msg ok";
+        msg.textContent = FORM_ENDPOINT ? "You're on the list! Check your inbox for a welcome email." : "Test mode: you're on the list! (Not saved yet: no email tool connected.)";
+        form.querySelector(".field").hidden = true;
+        form.querySelector(".consent").hidden = true;
+        var p = form.querySelector(".offer-box"); if (p) p.hidden = true;
+        // if (window.ttq) ttq.track("CompleteRegistration");
+        if (FORM_ENDPOINT) { document.body.classList.add("is-confirmed"); document.title = "You're on the list | Equaly"; window.scrollTo(0, 0); }
+      }
+      function fail(){ msg.hidden = false; msg.className = "msg err"; msg.textContent = "Your signup didn't go through. Check your connection and try again."; btn.disabled = false; }
+      btn.disabled = true;
+      if (!FORM_ENDPOINT) { ok(); return; }
+      var data = new FormData(); data.append("EMAIL", email); data.append("OPT_IN", "1"); data.append("email_address_check", ""); data.append("locale", "en"); if (REF) data.append("REF", REF);
+      fetch(FORM_ENDPOINT, {method:"POST", body:data, mode:"no-cors"}).then(ok).catch(fail);
+    });
+  });
+</script>
+
+<div id="confirmed-view">
+  <main class="ccard">
+    <span class="cmark" aria-hidden="true"><i></i><i></i><i></i></span>
+    <h1>You're on the list!</h1>
+    <p>Your email is confirmed and your spot on the Equaly waitlist is saved.</p>
+    <p class="cperk">Your 7 days of Pro will be waiting for you at launch.</p>
+    <ol>
+      <li><b>Check your inbox:</b> we've sent you a welcome email.</li>
+      <li><b>We'll email you</b> the day Equaly launches.</li>
+      <li><b>Until then:</b> one small step today counts.</li>
+    </ol>
+    <a class="cbtn" href="/">Back to Equaly</a>
+    <p style="font-size:13px">Equaly does not replace medical advice.</p>
+  </main>
+</div>
+</body>
+</html>
